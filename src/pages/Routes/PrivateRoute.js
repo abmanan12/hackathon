@@ -7,8 +7,6 @@ export default function PrivateRoute({ Component }) {
 
     const { user } = useSelector(state => state.AuthReducer?.authData)
 
-    // const user = true
-
     if (!user) {
         return <Navigate to='/auth/login' replace />
     }

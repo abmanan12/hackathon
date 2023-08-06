@@ -5,8 +5,7 @@ import { register } from '../../actions/authAction'
 import { Link } from 'react-router-dom'
 
 const initialState = {
-    firstname: '',
-    lastname: '',
+    name: '',
     username: '',
     country: '',
     password: '',
@@ -76,9 +75,9 @@ export default function Register() {
 
     return (
 
-        <div style={{ backgroundColor: '#F0F4F3' }}>
+        <div className='bg-style'>
             <div className="container content-center vh-100">
-                <div className="row mx-auto auth-width justify-content-center" style={{ minHeight: '70vh' }}>
+                <div className="row mx-auto auth-width justify-content-center" style={{ minHeight: '60vh' }}>
 
                     <div className="column left-column d-none d-sm-flex">
                         <h3>Welcome Back!</h3>
@@ -97,23 +96,18 @@ export default function Register() {
 
                         <div className="row mt-5">
                             <div className="col px-1 px-sm-2">
-                                <input className='form-control' name='firstname' type="text" onChange={handleChange} placeholder="First Name" />
+                                <input className='form-control' name='name' type="text" onChange={handleChange} placeholder="Enter Name" />
                             </div>
-                            <div className="col px-1 px-sm-2">
+                            {/* <div className="col px-1 px-sm-2">
                                 <input className='form-control' name='lastname' type="text" onChange={handleChange} placeholder="Last Name" />
+                            </div> */}
+                            <div className="col px-1 px-sm-2">
+                                <input className='form-control' name='username' type="text" onChange={handleChange} placeholder="Enter Email" />
                             </div>
                         </div>
 
-                        <div className="row my-4">
-                            <div className="col px-1 px-sm-2">
-                                <input className='form-control' name='username' type="text" onChange={handleChange} placeholder="Username" />
-                            </div>
-                            <div className="col px-1 px-sm-2">
-                                <input className='form-control' name='country' type="text" onChange={handleChange} placeholder="Country" />
-                            </div>
-                        </div>
 
-                        <div className="row">
+                        <div className="row mt-4">
                             <div className="col px-1 px-sm-2">
                                 <input className='form-control' name='password' type="password" onChange={handleChange} placeholder="Password" />
                             </div>

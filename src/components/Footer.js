@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <>
 
-            <footer className='bg-light'>
+            <footer style={{backgroundColor: '#E4E9ED'}}>
                 <div className="text-secondary pt-3 pt-md-5">
                     <div className="container">
 
@@ -38,16 +38,16 @@ export default function Footer() {
                                 <div className="input-group ps-3 ps-md-0 pt-2" style={{ maxWidth: '250px' }}>
                                     <input type="text" className="form-control footer-input" placeholder="Enter your email" />
                                     <div className="input-group-append">
-                                        <button className="btn btn-info text-light footer-button" type="button">SEND</button>
+                                        <button className="btn btn-green text-light footer-button" type="button">SEND</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="row m-0">
-                            <div className="col m-0">
-                                <div className="text-center p-2 p-sm-3 mt-5">
-                                    Copyright &copy; {year}. Developed by Abdul Manan.
+                            <div className="col p-0 m-0">
+                                <div className="text-center px-1 py-3 p-sm-3 mt-5">
+                                    Copyright &copy; {year}.Abdul Manan.
                                 </div>
                             </div>
                         </div>

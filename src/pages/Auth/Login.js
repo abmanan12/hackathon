@@ -33,7 +33,7 @@ export default function Login() {
 
     return (
 
-        <div style={{ backgroundColor: '#F0F4F3' }}>
+        <div className='bg-style'>
             <div className="container content-center vh-100">
                 <div className="row mx-auto auth-width justify-content-center" style={{ minHeight: '60vh' }}>
 

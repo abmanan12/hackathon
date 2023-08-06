@@ -38,6 +38,9 @@ export const login = (formData) => async (dispatch) => {
 
 // forgot password send email api
 export const sendEmail = (username) => async (dispatch) => {
+
+    dispatch({ type: 'AUTH_START' })
+
     try {
 
         const { data } = await axios.post(`${URL}/sendEmail`, { username })
@@ -48,8 +51,11 @@ export const sendEmail = (username) => async (dispatch) => {
     }
 }
 
-// forgot password send email api
+// forgot password reset api
 export const resetPassword = (password, resetToken) => async (dispatch) => {
+
+    dispatch({ type: 'AUTH_START' })
+
     try {
 
         const { data } = await axios.post(`${URL}/resetPassword`, { password, resetToken })
